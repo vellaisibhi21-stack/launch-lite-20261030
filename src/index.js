@@ -6,7 +6,11 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 
-module.exports = { add, greet };
+function farewell(name) {
+  return name ? `Goodbye, ${name}!` : 'Goodbye!';
+}
+
+module.exports = { add, greet, farewell };
 
 if (require.main === module) {
   console.log(greet('LaneSync'));
