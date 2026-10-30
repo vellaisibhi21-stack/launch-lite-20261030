@@ -9,3 +9,7 @@ describe('[feat-1] Greeter', () => {
     expect(greet('World')).toBe('Hello, World!');
   });
 });
+
+const { farewell } = require('../src/index');
+test('farewell by name', () => { expect(farewell('Ada')).toBe('Goodbye, Ada!'); });
+test('farewell default', () => { expect(farewell()).toBe('Goodbye!'); });
